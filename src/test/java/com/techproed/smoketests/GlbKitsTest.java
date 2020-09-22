@@ -12,8 +12,8 @@ import java.util.concurrent.TimeUnit;
 
 public class GlbKitsTest {
 
-    @Test
-    public void glbKitsTest(){
+    @Test(groups = "glbtest")
+    public void test(){
         Driver.getDriver().get(ConfigurationReader.getProperty("glb_kitchen"));
         GlbKitPage glbKitPage=new GlbKitPage();
         glbKitPage.cayBardagi.click();

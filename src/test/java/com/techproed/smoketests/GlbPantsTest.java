@@ -19,7 +19,7 @@ c ) Tests paketinin altında GlbPantsTest isminde bir tane class oluşturun.
 	Bulduğunuz webelementlerin (yani alt kategorilerin) içerdiği yazıları
 	ekrana yazdırın.
      */
-    @Test
+    @Test(groups = "glbtest")
     public void GlbPantsTest(){
         Driver.getDriver().get(ConfigurationReader.getProperty("glb_pants"));
         GlbPantsPage glbPantsPage=new GlbPantsPage();
